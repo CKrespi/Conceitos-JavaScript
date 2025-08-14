@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu primeiro programa</title>
+  <style>
+    body {
+      background-color: #1e2a38;
+      color: #f0f4f8;
+      font: 18pt 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #f9cb40; /* Comentário em CSS */
+    }
+
+    p {
+      color: #cbd6e2; 
+    }
+
+    .mensagem {
+      margin-top: 20px;
+      background-color: #2c3e50;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    strong {
+      color: #ffd95c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Olá, mundo!</h1> <!-- Isso é um comentário -->
+  <p>Teste aula 06 - Curso em Vídeo</p>
+
+  <script>
+    function iniciarPrograma() {
+      const nome = prompt('Qual é o seu nome?');
+      alert('É um grande prazer em te conhecer, ' + nome + '!');
+
+      var n1 = Number(window.prompt('Digite um número: ')) // String
+      var n2 = Number(window.prompt('Digite outro número: ')) // String
+      var s = n1 + n2
+      alert('A soma dos valores é ' + String(s)) // Concatenação
+      // (number + number) para adição
+      // (string + string) para concatenação
+
+      const gostaDeJS = confirm(`${nome}, você está gostando de JavaScript?`);
+      if (nome) {
+        document.body.innerHTML += `
+          <div class="mensagem">
+            <p>Seja bem-vindo(a), <strong>${nome}</strong>!</p>
+          </div>`;
+      }
+
+      document.body.innerHTML += `
+        <div class="mensagem">
+          <p>${
+            gostaDeJS
+              ? 'Que bom que você está gostando de JavaScript!'
+              : 'Continue praticando, logo tudo fará sentido!'
+          }</p>
+        </div>`;
+
+      var s = 'JavaScript'
+      'Eu estou aprendendo s' // Não faz interpolação
+      'Eu estou aprendendo ' + s // Usa concatenação
+      `Eu estou aprendendo ${s}` // Usa template string
+
+      s.length // Quantos caracteres a string tem
+      s.toUpperCase() // Tudo para 'MAIÚSCULAS'
+      s.toLowerCase() // Tudo para 'minúsculas'
+    }
+    iniciarPrograma();
+  </script>
+</body>
+</html>

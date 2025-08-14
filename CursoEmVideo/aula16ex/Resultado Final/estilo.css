@@ -1,0 +1,80 @@
+/* fundo e cabeçalho */
+body {
+  background: #2c7ad6;
+  font: normal 16px Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  padding: 24px 0 6px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+/* card central */
+section {
+  background: #f7f7f7;
+  width: 480px;
+  margin: 18px auto 28px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.linha { margin-bottom: 12px; }
+
+label { margin-right: 8px; }
+
+input[type="number"] {
+  width: 120px;
+  padding: 6px 8px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="button"] {
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #2c7ad6;
+  color: #fff;
+  cursor: pointer;
+  transition: transform .02s ease-in-out, opacity .2s;
+  margin-left: 6px;
+}
+
+input[type="button"]:active { transform: scale(0.98); }
+input[type="button"]:disabled { opacity: .5; cursor: not-allowed; }
+
+select {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  padding: 8px;
+}
+
+#res {
+  margin-top: 12px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  min-height: 44px;
+}
+
+/* rodapé */
+footer {
+  color: #e3f2fd;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 16px;
+}
